@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+	<display-name>Archetype Created Web Application</display-name>
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- LogoutServlet -->
+	<servlet>
+		<servlet-name>logoutservlet.java</servlet-name>
+		<servlet-class>com.yourpackage.logoutservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logoutservlet.java</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>alluserservlet.java</servlet-name>
+		<servlet-class>com.yourpackage.alluserservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>alluserservlet.java</servlet-name>
+		<url-pattern>/alluserservlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- LoginServlet -->
+	<servlet>
+		<servlet-name>loginservlet.java</servlet-name>
+		<servlet-class>com.yourpackage.loginservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginservlet.java</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>agentservlet.java</servlet-name>
+		<servlet-class>com.yourpackage.agentservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>agentsservlet.java</servlet-name>
+		<url-pattern>/agent</url-pattern>
+	</servlet-mapping>
+</web-app>

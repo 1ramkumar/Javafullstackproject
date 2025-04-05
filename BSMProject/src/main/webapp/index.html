@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>College Project</title>
+<style>
+body, html {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	background-image:
+		url("https://media.licdn.com/dms/image/C5612AQEEf9kIczF-Iw/article-cover_image-shrink_600_2000/0/1633548191707?e=2147483647&v=beta&t=LHISzgj0BWNm58bGauJ9QK3IrT0ojakxTnBFLpL-dBg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	text-align: center;
+}
+
+#header {
+	background-color: rgba(0, 0, 0, 0.6);
+	/* Semi-transparent black background */
+	width: 100%;
+	padding: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+#project-title {
+	font-size: 36px; /* Increase font size */
+	color: #FFD700; /* Gold color */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
+}
+
+#main-content {
+	flex: 1; /* Take up the remaining space */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#message {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+#message p:first-of-type {
+	color: rgb(192, 192, 192); /* Light gray for login message */
+}
+
+#message p:last-of-type {
+	color: #FF4136; /* Red color for register message */
+}
+
+#button-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px; /* Increased space between buttons */
+}
+
+#button-container form {
+	margin: 0;
+}
+
+#button-container input {
+	padding: 10px 20px; /* Adjust padding */
+	font-size: 16px; /* Adjust font size */
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+}
+
+#login-btn {
+	background-color: #FFD700; /* Steel gray */
+	color: white;
+}
+
+#register-btn {
+	background-color: #FFD700; /* Light gray */
+	color: white;
+}
+
+#footer {
+	background-color: rgba(0, 0, 0, 0.6);
+	/* Semi-transparent black background */
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div id="header">
+		<h2 id="project-title">Real estate Management And Storage System</h2>
+	</div>
+	<div id="main-content">
+		<div id="button-container">
+			<form action="login.jsp" method="get">
+				<input type="submit" id="login-btn" value="Login" />
+			</form>
+			<br>
+			<form action="register.jsp" method="get">
+				<input type="submit" id="register-btn" value="Register" />
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+		<!-- Add footer content here -->
+	</div>
+</body>
+</html>

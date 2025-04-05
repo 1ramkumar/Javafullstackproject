@@ -1,0 +1,89 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>College Project - Login</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f9fadmin@gmail.com9f9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.login-container {
+	width: 500px; /* Increase the width to make the table larger */
+	padding: 20px;
+	border: 1px solid #ccc;
+	background-color: #e9f2ff; /* Light blue background color */
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+	text-align: center;
+}
+
+.login-container table {
+	width: 100%;
+}
+
+.login-container table td {
+	padding: 10px;
+}
+
+.login-container input[type="email"], .login-container input[type="password"]
+	{
+	width: 75%;
+	padding: 10px;
+	font-size: 16px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+}
+
+.login-container input[type="submit"] {
+	display: block;
+	width: auto; /* Make the button smaller */
+	padding: 10px 18px; /* Smaller padding for the button */
+	background-color: #4CAF50; /* Green background */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 0 auto; /* Center the button */
+}
+
+.login-container input[type="submit"]:hover {
+	background-color: #45a049;
+}
+</style>
+</head>
+<body>
+	<div class="login-container">
+		<h2>Login Page</h2>
+		<form action="loginservlet" method="post">
+			<table>
+				<tr>
+					<td><label for="email">Email:</label></td>
+					<td><input type="email" id="email" name="email"
+						required="required" /></td>
+				</tr>
+				<tr>
+					<td><label for="password">Password:</label></td>
+					<td><input type="password" id="password" name="password"
+						required="required" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center;"><input
+						type="submit" value="Login" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
